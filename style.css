@@ -11,6 +11,7 @@
 }
 
 html {
+    cursor: none;		
     font-size: 10px;
     font-family: zig, sans-serif;
     color: #eee;
