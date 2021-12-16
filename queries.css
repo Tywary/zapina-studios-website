@@ -1,0 +1,260 @@
+/*small monitor computers or big tablets*/
+@media only screen and (max-width: 1200px) {
+    .landing-text{
+        font-size: 3rem;
+    }
+
+    .nav-list{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .nav-list li{
+        margin:1rem;
+    }
+
+    .nav-link{
+        font-size:3rem;
+    }
+
+    .menu-toggler {
+        top: 2rem;
+        right: 2rem;
+    }
+    
+}
+
+/*tablets portrait mode*/
+@media only screen and (max-width: 1023px) {
+
+    .landing-text h6 {
+        font-size: 1.5rem;
+    }
+
+    .section-heading h1 {
+        font-size:6rem;
+        opacity: 0.3;
+    }
+    
+    .section-heading h6 {
+        font-size: 2rem;
+    }
+
+
+    .portfolio-description p{
+        font-size: 1.5rem
+    }
+
+    .skill p{
+        font-size: 1.5rem;
+    }
+
+    .skill i{
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .skill h1{
+        font-size: 1.5rem;
+    }
+
+    .section-heading{
+        margin-bottom: 12rem;
+    }
+
+    .profile-img{
+        -webkit-box-flex:2;
+            -ms-flex:2;
+                flex:2
+    }
+
+    .landing-text{
+        -webkit-transform: translate(-50%, +180%);
+        transform: translate(-50%, +180%);
+    }
+
+}
+
+/*phones to tablets*/
+@media only screen and (max-width: 600px) {
+
+    .landing-text{
+        font-size: 2rem;
+        -webkit-transform: translate(-50%, +140%);
+        transform: translate(-50%, +140%);
+    }
+
+    .main-img{
+        width: 65vh;
+    }
+
+    .landing-text h6 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .section-heading{
+        margin-bottom: 12rem;
+    }
+
+    .section-heading h1{
+        font-size:4rem;
+    }
+
+    .section-heading-services h6{
+        display: none;
+    }
+
+    section{
+        padding: 0;
+    }
+
+    .portfolio-item{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .portfolio-flip{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    }
+
+    .section-heading{
+        margin-bottom: 5rem;
+    }
+
+    .portfolio-description{
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .portfolio-img img{
+        margin-top: 2rem;
+    }
+
+    .has-margin-right{
+        margin-right: 0;
+    }
+
+    .my-skills{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top: 0;
+    }
+
+    .skill{
+        margin:1rem 0;
+    }
+
+    .about-details p{
+        font-size: 1.5rem;
+    }
+
+    .mail-address{
+        font-size: 2rem;
+    }
+
+    .about .container{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .profile-img{
+        margin-top: 10rem;
+        margin-right: 30%;
+        margin-left: 30%;
+        margin-bottom: 0;
+    }
+
+    #about-heading{
+        margin-top: 0;
+        margin-bottom: 5rem;
+    }
+
+    .about-details p{
+        margin-bottom: 0;
+    }
+
+    .contact{
+        margin-top: 3rem;
+    }
+
+    .menu-toggler {
+        position: fixed;
+        top: 1.5rem;
+        right: 1.5rem;
+        width: 3rem;
+        height: 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        cursor: pointer;
+        -webkit-transition: -webkit-transform 650ms ease-out;
+        transition: -webkit-transform 650ms ease-out;
+        transition: transform 650ms ease-out;
+        transition: transform 650ms ease-out, -webkit-transform 650ms ease-out;
+        z-index: 11;
+    }
+
+    .bar{
+        background: white;
+        width: 100%;
+        height: 4px;
+        -webkit-transition: width 400ms, -webkit-transform 400ms;
+        transition: width 400ms, -webkit-transform 400ms;
+        transition: transform 400ms, width 400ms;
+        transition: transform 400ms, width 400ms, -webkit-transform 400ms;
+    }
+    
+    .bar.start {
+        -webkit-transform-origin: right;
+                transform-origin: right;
+    }
+    
+    .bar.end{
+        -webkit-transform-origin: left;
+                transform-origin: left;
+    }
+    
+    .bar.center{
+        -webkit-transform-origin: center;
+                transform-origin: center;
+    }
+    
+    .open .bar.start {
+        -webkit-transform: rotate(-270deg) translateX(2rem) translateY(0rem);
+                transform: rotate(-270deg) translateX(2rem) translateY(0rem);
+        width: 80%;
+    }
+    
+    .open .bar.end {
+        -webkit-transform: rotate(270deg) translateX(-0.4rem)translateY(1rem);
+                transform: rotate(270deg) translateX(-0.4rem)translateY(1rem);
+        width: 80%;
+    }
+    
+    .open .bar.center {
+        -webkit-transform: rotate(360deg) translateX(0.85rem);
+                transform: rotate(360deg) translateX(0.85rem);
+        width: 50%;
+    }
+
+}
